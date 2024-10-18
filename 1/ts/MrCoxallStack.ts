@@ -17,7 +17,7 @@ export class MrCoxallStack {
    *
    * @param {string} pushedString - The string to push into the stack
    */
-  public pushString(pushedString) {
+  public pushString (pushedString) {
     this.stackList.push(pushedString)
   }
 
@@ -26,7 +26,7 @@ export class MrCoxallStack {
    *
    * @returns {string} the stack as a string
    */
-  public showStack() {
+  public showStack () {
     let stackValues = ''
     for (let counter = 0; counter < this.stackList.length; counter++) {
       stackValues += this.stackList[counter] + ', '
