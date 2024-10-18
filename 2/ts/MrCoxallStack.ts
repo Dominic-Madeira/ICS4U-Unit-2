@@ -17,7 +17,7 @@ export class MrCoxallStack {
    *
    * @returns {string} the stack as a string
    */
-  public get showStack(): string {
+  public get showStack (): string {
     let stackValues = ''
     for (let counter = 0; counter < this.stackList.length; counter++) {
       stackValues += this.stackList[counter] + ', '
@@ -43,7 +43,7 @@ export class MrCoxallStack {
   public popItem (): string {
     let returnString = ''
     if (this.stackList.length > 0) {
-      let topItem = this.stackList[this.stackList.length - 1]
+      const topItem = this.stackList[this.stackList.length - 1]
       this.stackList.splice(-1, 1)
       returnString = topItem
     } else {
