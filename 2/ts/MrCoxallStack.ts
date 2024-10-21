@@ -12,12 +12,13 @@ export class MrCoxallStack {
    */
   private stackList: string[] = []
 
+  //getters
   /**
    * Getter for the formatted stack values
    *
    * @returns {string} the stack as a string
    */
-  public get showStack (): string {
+  public getStack (): string {
     let stackValues = ''
     for (let counter = 0; counter < this.stackList.length; counter++) {
       stackValues += this.stackList[counter] + ', '
