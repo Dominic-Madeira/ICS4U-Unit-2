@@ -10,7 +10,7 @@ export class MrCoxallStack {
   /**
    * The MrCoxallStack list
    */
-  private stackList: string[] = []
+  private readonly stackList: string[] = []
 
   // getters
   /**
