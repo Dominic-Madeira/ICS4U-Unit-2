@@ -28,6 +28,28 @@ export class MrCoxallStack {
   }
 
   /**
+   * Getter for the stack amount
+   *
+   * @returns {number} of items in stack
+   */
+  public get getSize (): number {
+    return this.stackList.length
+  }
+
+  /**
+   * Getter for to check if stack is empty
+   *
+   * @returns {boolean} of if stack is empty or not
+   */
+  public get getEmpty (): boolean {
+    if (this.getSize === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  /**
    * This method pushes a string into the stack
    *
    * @param {string} pushedString - The string to push into the stack
@@ -43,12 +65,12 @@ export class MrCoxallStack {
    */
   public popItem (): string {
     let returnString = ''
-    if (this.stackList.length > 0) {
-      const topItem = this.stackList[this.stackList.length - 1]
+    if (this.getSize > 0) {
+      const topItem = this.stackList[this.getSize - 1]
       this.stackList.splice(-1, 1)
       returnString = topItem
     } else {
-      returnString = 'Invalid Input!'
+      returnString = 'No items in stack'
     }
     return returnString
   }
