@@ -54,7 +54,7 @@ export class MrCoxallStack {
    *
    * @param {string} pushedString - The string to push into the stack
    */
-  public pushString (pushedString): void {
+  public pushString (pushedString: string): void {
     this.stackList.push(pushedString)
   }
 
