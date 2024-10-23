@@ -14,13 +14,12 @@ fruitStack.pushString('green')
 fruitStack.pushString('blue')
 console.log(`Fruit items: ${fruitStack.getStack}`)
 console.log(`The size of the stack is: ${fruitStack.getSize}`)
-console.log(`Is the stack empty? ${fruitStack.getEmpty}`)
+console.log(`Is the stack empty? ${fruitStack.getEmpty.toString()}`)
 while (fruitStack.getSize > 0) {
-  let topFruit = fruitStack.popItem()
+  const topFruit = fruitStack.popItem()
   console.log(`Popped fruit item: ${topFruit}`)
 }
 console.log(`Fruit items: ${fruitStack.getStack}`)
 console.log(`The size of the stack is: ${fruitStack.getSize}`)
-console.log(`Is the stack empty? ${fruitStack.getEmpty}`)
+console.log(`Is the stack empty? ${fruitStack.getEmpty.toString()}`)
 console.log()
-

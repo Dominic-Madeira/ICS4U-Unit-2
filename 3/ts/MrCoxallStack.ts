@@ -39,7 +39,7 @@ export class MrCoxallStack {
   /**
    * Getter for to check if stack is empty
    *
-   * @returns {boolean} of if stack is empty or not
+   * @returns {bool} of if stack is empty or not
    */
   public get getEmpty (): boolean {
     if (this.getSize === 0) {

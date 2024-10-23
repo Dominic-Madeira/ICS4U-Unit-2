@@ -14,13 +14,12 @@ doggyPile.pushString('green')
 doggyPile.pushString('blue')
 console.log(`Dog items: ${doggyPile.getStack}`)
 console.log(`The size of the stack is: ${doggyPile.getSize}`)
-console.log(`Is the stack empty? ${doggyPile.getEmpty}`)
+console.log(`Is the stack empty? ${doggyPile.getEmpty.toString()}`)
 while (doggyPile.getSize > 0) {
-  let topDog = doggyPile.popItem()
+  const topDog = doggyPile.popItem()
   console.log(`Popped dog item: ${topDog}`)
 }
 console.log(`Dog items: ${doggyPile.getStack}`)
 console.log(`The size of the stack is: ${doggyPile.getSize}`)
-console.log(`Is the stack empty? ${doggyPile.getEmpty}`)
+console.log(`Is the stack empty? ${doggyPile.getEmpty.toString()}`)
 console.log()
-
