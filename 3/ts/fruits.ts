@@ -9,9 +9,9 @@ import { MrCoxallStack } from './MrCoxallStack.ts'
 
 // Use MrCoxallStack class
 const fruitStack = new MrCoxallStack()
-fruitStack.pushString('red')
-fruitStack.pushString('green')
-fruitStack.pushString('blue')
+fruitStack.pushString('apple')
+fruitStack.pushString('banana')
+fruitStack.pushString('cherry')
 console.log(`Fruit items: ${fruitStack.getStack}`)
 console.log(`The size of the stack is: ${fruitStack.getSize}`)
 console.log(`Is the stack empty? ${fruitStack.getEmpty.toString()}`)

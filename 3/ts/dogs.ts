@@ -9,9 +9,9 @@ import { MrCoxallStack } from './MrCoxallStack.ts'
 
 // Use MrCoxallStack class
 const doggyPile = new MrCoxallStack()
-doggyPile.pushString('red')
-doggyPile.pushString('green')
-doggyPile.pushString('blue')
+doggyPile.pushString('poodle')
+doggyPile.pushString('retriever')
+doggyPile.pushString('beagle')
 console.log(`Dog items: ${doggyPile.getStack}`)
 console.log(`The size of the stack is: ${doggyPile.getSize}`)
 console.log(`Is the stack empty? ${doggyPile.getEmpty.toString()}`)
