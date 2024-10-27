@@ -50,6 +50,21 @@ export class MrCoxallStack {
   }
 
   /**
+   * Getter for the top of the stack
+   *
+   * @returns {string} of the top item
+   */
+  public get peekItem (): string {
+    let returnString = ''
+    if (this.getEmpty) {
+      returnString = 'No items in stack'
+    } else {
+      returnString = this.stackList[this.getSize - 1]
+    }
+    return returnString
+  }
+
+  /**
    * This method pushes a string into the stack
    *
    * @param {string} pushedString - The string to push into the stack
@@ -73,5 +88,15 @@ export class MrCoxallStack {
       returnString = 'No items in stack'
     }
     return returnString
+  }
+
+  /**
+   * This method clears the stack
+   */
+  public clearStack (): void {
+    // while there are items in the stack, remove an item
+    while (!this.getEmpty) {
+      this.stackList.splice(-1, 1)
+    }
   }
 }
