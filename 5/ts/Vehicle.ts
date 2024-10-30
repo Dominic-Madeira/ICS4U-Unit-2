@@ -32,7 +32,7 @@ export class Vehicle {
    */
   private readonly maxSpeed: number
 
-  constructor(color: string, licensePlate: string, doorsNumber: number, maxSpeed: number){
+  constructor (color: string, licensePlate: string, doorsNumber: number, maxSpeed: number) {
     this.licensePlate = licensePlate
     this.color = color
     this.speed = 0
@@ -46,7 +46,7 @@ export class Vehicle {
    *
    * @returns {string} of license plate
    */
-  public get getLicensePlate (): string {
+  public get theLicensePlate (): string {
     return this.licensePlate
   }
 
@@ -55,7 +55,7 @@ export class Vehicle {
    *
    * @returns {string} of car color
    */
-  public get getColor (): string {
+  public get theColor (): string {
     return this.color
   }
 
@@ -64,7 +64,7 @@ export class Vehicle {
    *
    * @returns {number} of car speed
    */
-  public get getSpeed (): number {
+  public get theSpeed (): number {
     return this.speed
   }
 
@@ -73,7 +73,7 @@ export class Vehicle {
    *
    * @returns {string} of car properties
    */
-  public get status (): (number | string)[] {
+  public get status (): Array<number | string> {
     return [this.speed, this.maxSpeed, this.doorsNumber, this.licensePlate, this.color]
   }
 
@@ -83,7 +83,7 @@ export class Vehicle {
    *
    * @param {string} newPlate
    */
-  public set setLicensePlate (newPlate: string) {
+  public set theLicensePlate (newPlate: string) {
     if (newPlate != null) {
       this.licensePlate = newPlate
     }
@@ -94,7 +94,7 @@ export class Vehicle {
    *
    * @param {string} newColor of car
    */
-  public set setColor (newColor: string) {
+  public set theColor (newColor: string) {
     if (newColor != null) {
       this.color = newColor
     }
