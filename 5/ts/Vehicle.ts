@@ -20,21 +20,24 @@ export class Vehicle {
   /**
    * The speed of car
    */
-  private readonly speed: number = 0
+  private speed: number
 
   /**
    * The amount of doors
    */
-  private readonly doorsNumber: number = 4
+  private readonly doorsNumber: number
 
   /**
    * The max speed
    */
-  private readonly maxSpeed: number = 60
+  private readonly maxSpeed: number
 
-  constructor(licensePlate: string, color: string){
+  constructor(color: string, licensePlate: string, doorsNumber: number, maxSpeed: number){
     this.licensePlate = licensePlate
     this.color = color
+    this.speed = 0
+    this.doorsNumber = doorsNumber
+    this.maxSpeed = maxSpeed
   }
 
   // getters
@@ -54,6 +57,24 @@ export class Vehicle {
    */
   public get getColor (): string {
     return this.color
+  }
+
+  /**
+   * Getter for car speed
+   *
+   * @returns {number} of car speed
+   */
+  public get getSpeed (): number {
+    return this.speed
+  }
+
+  /**
+   * Getter for car status
+   *
+   * @returns {string} of car properties
+   */
+  public get status (): (number | string)[] {
+    return [this.speed, this.maxSpeed, this.doorsNumber, this.licensePlate, this.color]
   }
 
   // setters
@@ -87,6 +108,9 @@ export class Vehicle {
    */
   public accelerate (accelPower: number, accelTime: number): void {
     this.speed = (accelPower * accelTime) + this.speed
+    if (this.speed > this.maxSpeed) {
+      this.speed = this.maxSpeed
+    }
   }
 
   /**
@@ -97,5 +121,8 @@ export class Vehicle {
    */
   public break (breakPower: number, breakTime: number): void {
     this.speed = this.speed - (breakPower * breakTime)
+    if (this.speed < 0) {
+      this.speed = 0
+    }
   }
 }
