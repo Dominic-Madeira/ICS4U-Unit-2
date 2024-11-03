@@ -40,7 +40,6 @@ export class Vehicle {
     this.maxSpeed = maxSpeed
   }
 
-  // getters
   /**
    * Getter for the license plate
    *
@@ -51,12 +50,34 @@ export class Vehicle {
   }
 
   /**
+   * Sets the license plate number
+   *
+   * @param {string} newPlate
+   */
+  public set theLicensePlate (newPlate: string) {
+    if (newPlate != null) {
+      this.licensePlate = newPlate
+    }
+  }
+
+  /**
    * Getter for car color
    *
    * @returns {string} of car color
    */
   public get theColor (): string {
     return this.color
+  }
+
+  /**
+   * Sets the car color
+   *
+   * @param {string} newColor of car
+   */
+  public set theColor (newColor: string) {
+    if (newColor != null) {
+      this.color = newColor
+    }
   }
 
   /**
@@ -75,29 +96,6 @@ export class Vehicle {
    */
   public get status (): Array<number | string> {
     return [this.speed, this.maxSpeed, this.doorsNumber, this.licensePlate, this.color]
-  }
-
-  // setters
-  /**
-   * Sets the license plate number
-   *
-   * @param {string} newPlate
-   */
-  public set theLicensePlate (newPlate: string) {
-    if (newPlate != null) {
-      this.licensePlate = newPlate
-    }
-  }
-
-  /**
-   * Sets the car color
-   *
-   * @param {string} newColor of car
-   */
-  public set theColor (newColor: string) {
-    if (newColor != null) {
-      this.color = newColor
-    }
   }
 
   /**

@@ -20,11 +20,11 @@ console.log(` -> Color: ${fordFocus.status[4]}`)
 
 console.log('Accelerating, 10 of power for 10 sec.')
 fordFocus.accelerate(10, 10)
-console.log(`New speed: ${fordFocus.getSpeed}`)
+console.log(`New speed: ${fordFocus.theSpeed}`)
 
 console.log('Changing colour to black:')
-fordFocus.setColor = 'black'
-console.log(`New color: ${fordFocus.getColor}`)
+fordFocus.theColor = 'black'
+console.log(`New color: ${fordFocus.theColor}`)
 
 console.log('')
 
@@ -41,15 +41,15 @@ console.log(` -> Color: ${ferrari.status[4]}`)
 
 console.log('Accelerating, 100 of power for 4 sec.')
 ferrari.accelerate(100, 4)
-console.log(`New speed: ${ferrari.getSpeed}`)
+console.log(`New speed: ${ferrari.theSpeed}`)
 
 console.log('Breaking, 10 of power for 10 sec.')
 ferrari.break(10, 10)
-console.log(`New speed: ${ferrari.getSpeed}`)
+console.log(`New speed: ${ferrari.theSpeed}`)
 
 console.log('Changing color:')
-ferrari.setColor = 'racing red!'
-console.log(`New color: ${ferrari.getColor}`)
+ferrari.theColor = 'racing red!'
+console.log(`New color: ${ferrari.theColor}`)
 
 console.log('')
 
@@ -66,14 +66,14 @@ console.log(` -> Color: ${citroenAmi.status[4]}`)
 
 console.log('Accelerating, 5 of power for 10 sec.')
 citroenAmi.accelerate(5, 10)
-console.log(`New speed: ${citroenAmi.getSpeed}`)
+console.log(`New speed: ${citroenAmi.theSpeed}`)
 
 console.log('Breaking, 2 of power for 10 sec.')
 citroenAmi.break(2, 10)
-console.log(`New speed: ${citroenAmi.getSpeed}`)
+console.log(`New speed: ${citroenAmi.theSpeed}`)
 
 console.log('Changing color:')
-citroenAmi.setColor = 'purple'
-console.log(`New color: ${citroenAmi.getColor}`)
+citroenAmi.theColor = 'purple'
+console.log(`New color: ${citroenAmi.theColor}`)
 
 console.log('\nDone.')
