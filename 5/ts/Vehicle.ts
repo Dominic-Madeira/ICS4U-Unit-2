@@ -77,6 +77,8 @@ export class Vehicle {
   public set theColor (newColor: string) {
     if (newColor != null) {
       this.color = newColor
+    } else {
+      this.color = 'silver'
     }
   }
 
