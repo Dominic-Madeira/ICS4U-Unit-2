@@ -21,14 +21,14 @@ export class Jet extends Airplane {
   /**
    * Sets the speed by multipying inputted speed by multiplyer
    */
-  public set theSpeed (speed: number): void {
-    super.theSpeed(speed * this.MULTIPLYER)
+  public setSpeed (speed: number): void {
+    super.theSpeed = speed * this.MULTIPLYER
   }
 
   /**
    * Sets the speed by multiplying the speed by 2
    */
   public accelerate (): void {
-    super.theSpeed(theSpeed() * 2)
+    this.theSpeed = this.theSpeed * 2
   }
 }
