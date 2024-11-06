@@ -45,11 +45,11 @@ final class Main {
             fourConst, twoHundredEightyFourConst);
 
         System.out.println(statusString);
-        System.out.print(" -> Speed: " + fordFocus.status(0));
-        System.out.print(" -> Max Speed: " + fordFocus.status(1));
-        System.out.print(" -> Number of doors: " + fordFocus.status(2));
-        System.out.print(" -> License Plate: " + fordFocus.status(3));
-        System.out.print(" -> Color: " + fordFocus.status(4));
+        System.out.println(" -> Speed: " + fordFocus.status(0));
+        System.out.println(" -> Max Speed: " + fordFocus.status(1));
+        System.out.println(" -> Number of doors: " + fordFocus.status(2));
+        System.out.println(" -> License Plate: " + fordFocus.status(3));
+        System.out.println(" -> Color: " + fordFocus.status(4));
 
 
         System.out.println("Accelerating, 10 of power for 10 sec.");
@@ -68,11 +68,11 @@ final class Main {
             threeHundredTwentyConst);
 
         System.out.println(statusString);
-        System.out.print(" -> Speed: " + ferrari.status(0));
-        System.out.print(" -> Max Speed: " + ferrari.status(1));
-        System.out.print(" -> Number of doors: " + ferrari.status(2));
-        System.out.print(" -> License Plate: " + ferrari.status(3));
-        System.out.print(" -> Color: " + ferrari.status(4));
+        System.out.println(" -> Speed: " + ferrari.status(0));
+        System.out.println(" -> Max Speed: " + ferrari.status(1));
+        System.out.println(" -> Number of doors: " + ferrari.status(2));
+        System.out.println(" -> License Plate: " + ferrari.status(3));
+        System.out.println(" -> Color: " + ferrari.status(4));
 
         System.out.println("Accelerating, 100 of power for 4 sec.");
         ferrari.accelerate(oneHundredConst, fourConst);
@@ -94,11 +94,11 @@ final class Main {
             fiveConst, fortyFiveConst);
 
         System.out.println(statusString);
-        System.out.print(" -> Speed: " + citroenAmi.status(0));
-        System.out.print(" -> Max Speed: " + citroenAmi.status(1));
-        System.out.print(" -> Number of doors: " + citroenAmi.status(2));
-        System.out.print(" -> License Plate: " + citroenAmi.status(3));
-        System.out.print(" -> Color: " + citroenAmi.status(4));
+        System.out.println(" -> Speed: " + citroenAmi.status(0));
+        System.out.println(" -> Max Speed: " + citroenAmi.status(1));
+        System.out.println(" -> Number of doors: " + citroenAmi.status(2));
+        System.out.println(" -> License Plate: " + citroenAmi.status(3));
+        System.out.println(" -> Color: " + citroenAmi.status(4));
 
         System.out.println("Accelerating, 5 of power for 10 sec.");
         citroenAmi.accelerate(fiveConst, tenConst);

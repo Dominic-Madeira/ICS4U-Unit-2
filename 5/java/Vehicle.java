@@ -47,7 +47,7 @@ final class Vehicle {
      * @param doorNumber on car
      * @param maximumSpeed of car
      */
-    private Vehicle(
+    public Vehicle(
         final String colour, final String liscensePlate,
         final int doorNumber, final int maximumSpeed
     ) {
@@ -112,15 +112,16 @@ final class Vehicle {
     /**
      * Getter for car status.
      *
-     * @return type List<Object> which means a list of any type
-
+     * @param index of property to return
+     * @return Object which is type of any type
      */
-    public List<Object> status() {
-      // creates a fixed size list
-      return Arrays.asList(
+    public Object status(int index) {
+      // creates a fixed size list of type object which is any type
+      List<Object> status = Arrays.asList(
           this.speed, this.maxSpeed, this.doorsNumber,
           this.licensePlate, this.color
       );
+      return status.get(index);
     }
 
     /**
