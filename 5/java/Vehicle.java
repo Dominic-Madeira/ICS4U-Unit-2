@@ -1,4 +1,4 @@
-/**
+/*
  * The Vehicle Class.
  *
  * @author Dominic M.
@@ -6,10 +6,13 @@
  * @version 1.0
  */
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * This is the Vehicle Class.
  */
-public class Vehicle {
+final class Vehicle {
 
     /**
      * The license plate.
@@ -38,15 +41,21 @@ public class Vehicle {
 
     /**
      * This is the constructor.
+     *
+     * @param colour of car
+     * @param liscensePlate number
+     * @param doorNumber on car
+     * @param maximumSpeed of car
      */
     private Vehicle(
-        String color, String licensePlate, int doorsNumber, int maxSpeed
+        final String colour, final String liscensePlate,
+        final int doorNumber, final int maximumSpeed
     ) {
-        this.licensePlate = licensePlate;
-        this.color = color;
+        this.licensePlate = liscensePlate;
+        this.color = colour;
         this.speed = 0;
-        this.doorsNumber = doorsNumber;
-        this.maxSpeed = maxSpeed;
+        this.doorsNumber = doorNumber;
+        this.maxSpeed = maximumSpeed;
     }
 
     /**
@@ -63,7 +72,7 @@ public class Vehicle {
      *
      * @param newPlate the new license plate number
      */
-    public void setLicensePlate(String newPlate) {
+    public void setLicensePlate(final String newPlate) {
       if (newPlate != null) {
           this.licensePlate = newPlate;
       }
@@ -83,7 +92,7 @@ public class Vehicle {
      *
      * @param newColor of car
      */
-    public void setColor(String newColor) {
+    public void setColor(final String newColor) {
         if (newColor != null) {
             this.color = newColor;
         } else {
@@ -103,10 +112,15 @@ public class Vehicle {
     /**
      * Getter for car status.
      *
-     * @return array of strings of the car properties
-     */
-    public status {
+     * @return type List<Object> which means a list of any type
 
+     */
+    public List<Object> status() {
+      // creates a fixed size list
+      return Arrays.asList(
+          this.speed, this.maxSpeed, this.doorsNumber,
+          this.licensePlate, this.color
+      );
     }
 
     /**
@@ -115,7 +129,7 @@ public class Vehicle {
      * @param accelPower how much force is being put into acceleration
      * @param accelTime how long it is accelerating for
      */
-    public void accelerate (int accelPower, int accelTime) {
+    public void accelerate(final int accelPower, final int accelTime) {
         this.speed = (accelPower * accelTime) + this.speed;
         if (this.speed > this.maxSpeed) {
             this.speed = this.maxSpeed;
@@ -128,7 +142,7 @@ public class Vehicle {
      * @param brakePower how much force is being put into the brakes
      * @param brakeTime how long it is braking for
      */
-    public void brake (int brakePower, int brakeTime) {
+    public void brake(final int brakePower, final int brakeTime) {
         this.speed = this.speed - (brakePower * brakeTime);
         if (this.speed < 0) {
           this.speed = 0;
