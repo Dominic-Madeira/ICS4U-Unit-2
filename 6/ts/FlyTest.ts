@@ -1,4 +1,4 @@
-/**
+/*
  * The FlyTest.ts starting point.
  *
  * author Dominic M.

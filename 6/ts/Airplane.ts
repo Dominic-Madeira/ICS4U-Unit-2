@@ -1,4 +1,4 @@
-/**
+/*
  * The Airplane Class
  *
  * author Dominic M.

@@ -1,5 +1,5 @@
-/**
- * The Airplane Class
+/*
+ * The Jet Class
  *
  * author Dominic M.
  * version 1.0
