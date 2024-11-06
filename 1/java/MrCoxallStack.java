@@ -16,16 +16,13 @@ public class MrCoxallStack {
     /**
      * The MrCoxallStack list.
      */
-    ArrayList<String> stackList = new ArrayList<>();
+    private ArrayList<String> stackList;
 
     /**
-     * Prevent instantiation.
-     *
-     * @throws IllegalStateException if this is ever called
-     *
+     * The constructor for the stack.
      */
     public MrCoxallStack() {
-        throw new IllegalStateException("Cannot be instantiated");
+        this.stackList = new ArrayList<String>();
     }
 
     /**
@@ -33,7 +30,7 @@ public class MrCoxallStack {
      *
      * @param pushedString - The string to push into the stack
      */
-    public void pushString(String pushedString) {
+    public void pushString(final String pushedString) {
         this.stackList.add(pushedString);
     }
 

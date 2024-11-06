@@ -27,10 +27,25 @@ final class Main {
      * @param args no args used
      */
     public static void main(final String[] args) {
-        final fruitStack = new MrCoxallStack();
+        // Use MrCoxallStack
+        final MrCoxallStack fruitStack = new MrCoxallStack();
         fruitStack.pushString("apple");
         fruitStack.pushString("banana");
         fruitStack.pushString("cherry");
-        System.out.println("Fruit items: " + fruitStack.showStack())
+        System.out.println("Fruit items: " + fruitStack.showStack());
+
+        final MrCoxallStack colorStack = new MrCoxallStack();
+        colorStack.pushString("red");
+        colorStack.pushString("green");
+        colorStack.pushString("blue");
+        System.out.println("Color items: " + colorStack.showStack());
+
+        final MrCoxallStack doggyPile = new MrCoxallStack();
+        doggyPile.pushString("poodle");
+        doggyPile.pushString("retriever");
+        doggyPile.pushString("beagle");
+        System.out.println("Dog items: " + doggyPile.showStack());
+
+        System.out.println("\nDone.");
     }
 }
