@@ -13,13 +13,13 @@ const biplane = new Airplane()
 biplane.theSpeed = 212
 console.log(biplane.theSpeed)
 const boeing = new Jet()
-boeing.theSpeed = 422
+boeing.setSpeed(422)
 console.log(boeing.theSpeed)
 let x = 0
-while (x<4) {
+while (x < 4) {
   boeing.accelerate()
   console.log(boeing.theSpeed)
-  if (boeing.theSpeed < 5000) {
+  if (boeing.theSpeed > 5000) {
     biplane.theSpeed = biplane.theSpeed * 2
   } else {
     boeing.accelerate()

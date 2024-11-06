@@ -28,9 +28,9 @@ export class Airplane {
    */
   public set theSpeed (speed: number) {
     if (speed > 0) {
-        this.speed = speed
+      this.speed = speed
     } else {
-        this.speed = 0
+      this.speed = 0
     }
   }
 }

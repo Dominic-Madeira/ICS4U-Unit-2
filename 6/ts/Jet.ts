@@ -14,12 +14,10 @@ export class Jet extends Airplane {
    */
   private readonly MULTIPLYER: number = 2
 
-  constructor () {
-    super()
-  }
-
   /**
    * Sets the speed by multipying inputted speed by multiplyer
+   *
+   * @param speed of input
    */
   public setSpeed (speed: number): void {
     super.theSpeed = speed * this.MULTIPLYER

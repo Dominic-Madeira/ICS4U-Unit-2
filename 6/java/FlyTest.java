@@ -1,4 +1,4 @@
-/**
+/*
  * The FlyTest Class.
  *
  * @author Dominic M.
@@ -7,9 +7,9 @@
  */
 
 /**
- * This is the FlyTest Class
+ * This is the FlyTest Class.
  */
-public class FlyTest {
+public final class FlyTest {
 
     /**
      * Prevent instantiation.
@@ -23,9 +23,10 @@ public class FlyTest {
 
     /**
      * This is the main function.
+     *
      * @param args no args used
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Airplane biplane = new Airplane();
         biplane.setSpeed(212);
         System.out.println(biplane.getSpeed());
@@ -33,7 +34,7 @@ public class FlyTest {
         boeing.setSpeed(422);
         System.out.println(boeing.getSpeed());
         int x = 0;
-        while (x<4) {
+        while (x < 4) {
             boeing.accelerate();
             System.out.println(boeing.getSpeed());
                 if (boeing.getSpeed() > 5000) {

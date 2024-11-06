@@ -1,4 +1,4 @@
-/**
+/*
  * The Airplane Class.
  *
  * @author Dominic M.
@@ -7,7 +7,7 @@
  */
 
 /**
- * This is the Airplane Class
+ * This is the Airplane Class.
  */
 public class Airplane {
     /**
@@ -24,6 +24,8 @@ public class Airplane {
 
     /**
      * Gets the speed.
+     *
+     * @return speed of airplane
      */
     public int getSpeed() {
         return this.speed;
@@ -31,8 +33,10 @@ public class Airplane {
 
     /**
      * Sets the speed.
+     *
+     * @param newSpeed of airplane
      */
-    public void setSpeed(int newSpeed) {
+    public void setSpeed(final int newSpeed) {
       if (newSpeed > 0) {
         this.speed = newSpeed;
       } else {

@@ -1,4 +1,4 @@
-/**
+/*
  * The Jet Class.
  *
  * @author Dominic M.
@@ -7,7 +7,7 @@
  */
 
 /**
- * This is the Jet Class
+ * This is the Jet Class.
  */
 public class Jet extends Airplane {
     /**
@@ -24,8 +24,10 @@ public class Jet extends Airplane {
 
     /**
      * Sets the speed by mutiplying the inputted speed by the multiplyer.
+     *
+     * @param speed from input
      */
-    public void setSpeed(int speed) {
+    public void setSpeed(final int speed) {
         super.setSpeed(speed * MULTIPLYER);
     }
 
