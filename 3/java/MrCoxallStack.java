@@ -32,10 +32,12 @@ public class MrCoxallStack {
      */
     public String getStack() {
         String stackValues = "";
-        for (int counter = 0; counter < this.stackList.size(); counter++) {
-            stackValues += this.stackList.get(counter) + ", ";
+        if (!getEmpty()) {
+            for (int counter = 0; counter < this.stackList.size(); counter++) {
+                stackValues += this.stackList.get(counter) + ", ";
+            }
+            stackValues = stackValues.substring(0, stackValues.length() - 2);
         }
-        stackValues = stackValues.substring(0, stackValues.length() - 2);
         return stackValues;
     }
 
@@ -54,11 +56,7 @@ public class MrCoxallStack {
      * @return boolean whether or not the stack is empty
      */
     public boolean getEmpty() {
-        if (this.getSize() == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.getSize() == 0;
     }
 
     /**
