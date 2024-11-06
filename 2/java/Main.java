@@ -56,7 +56,6 @@ final class Main {
         final String topDog = doggyPile.popItem();
         System.out.println("Popped dog item: " + topDog);
         System.out.println("Dog items: " + doggyPile.getStack());
-        System.out.println();
 
         System.out.println("\nDone.");
     }
