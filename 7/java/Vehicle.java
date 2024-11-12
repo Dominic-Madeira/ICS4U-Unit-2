@@ -71,7 +71,7 @@ public class Vehicle {
     }
 
     /**
-     * Sets the speed
+     * Sets the speed.
      *
      * @param newSpeed of vehicle
      */
