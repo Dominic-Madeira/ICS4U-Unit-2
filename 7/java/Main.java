@@ -27,90 +27,56 @@ final class Main {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
-        // MultipleStringLiterals & MagicNumbers
-        final String statusString = "Status:";
-        final String newSpeedString = "New speed: ";
-        final String newColorString = "New color: ";
-        final String changingColorString = "Changing color:";
-        final int fourConst = 4;
-        final int twoHundredEightyFourConst = 284;
-        final int tenConst = 10;
-        final int threeHundredTwentyConst = 320;
-        final int oneHundredConst = 100;
-        final int fortyFiveConst = 45;
-        final int fiveConst = 5;
 
-        System.out.println("Created Ford focus");
-        final Vehicle fordFocus = new Vehicle("white", "B40-C4RR0",
-            fourConst, twoHundredEightyFourConst);
+        // new Bike
+        System.out.println("Created Bmx bike.");
+        final Bike bmxBike = new Bike("red", "40")
 
-        System.out.println(statusString);
-        System.out.println(" -> Speed: " + fordFocus.status(0));
-        System.out.println(" -> Max Speed: " + fordFocus.status(1));
-        System.out.println(" -> Number of doors: " + fordFocus.status(2));
-        System.out.println(" -> License Plate: " + fordFocus.status(3));
-        System.out.println(" -> Color: " + fordFocus.status(4));
+        System.out.println("Status:");
+        System.out.println(" -> Speed: " + bmxBike.status(0));
+        System.out.println(" -> Max Speed: " + bmxBike.status(1));
+        System.out.println(" -> Color: " + bmxBike.status(2));
+        System.out.println(" -> Cadence: " + bmxBike.status(3));
 
 
-        System.out.println("Accelerating, 10 of power for 10 sec.");
-        fordFocus.accelerate(tenConst, tenConst);
-        System.out.println(newSpeedString + fordFocus.getSpeed());
+        System.out.println("\nSet cadence to 10");
+        bmxBike.accelerate(10, 2);
+        System.out.println(" -> Speed: " + bmxBike.status(0));
+        System.out.println(" -> Max Speed: " + bmxBike.status(1));
+        System.out.println(" -> Color: " + bmxBike.status(2));
+        System.out.println(" -> Cadence: " + bmxBike.status(3));
 
-        System.out.println("Changing colour to black:");
-        fordFocus.setColor("black");
-        System.out.println(newColorString + fordFocus.getColor());
+        System.out.println("\nAccelerate by 15:");
+        bmxBike.accelerate(15, 2);
+        System.out.println(" -> Speed: " + bmxBike.status(0));
+        System.out.println(" -> Max Speed: " + bmxBike.status(1));
+        System.out.println(" -> Color: " + bmxBike.status(2));
+        System.out.println(" -> Cadence: " + bmxBike.status(3));
 
-        System.out.println("");
+        System.out.println("\nRinging bell");
+        System.out.println(bmxBike.ring());
 
-        // New Ferrari
-        System.out.println("Created a Ferrari");
-        final Vehicle ferrari = new Vehicle("red", "VHD-35HU", 2,
-            threeHundredTwentyConst);
+        // New Truck
+        System.out.println("Created a Truck");
+        final Truck truck = new Truck("Grey", "HGC-3456F", 200);
 
-        System.out.println(statusString);
-        System.out.println(" -> Speed: " + ferrari.status(0));
-        System.out.println(" -> Max Speed: " + ferrari.status(1));
-        System.out.println(" -> Number of doors: " + ferrari.status(2));
-        System.out.println(" -> License Plate: " + ferrari.status(3));
-        System.out.println(" -> Color: " + ferrari.status(4));
+        System.out.println("Status:");
+        System.out.println(" -> Speed: " + truck.status(0));
+        System.out.println(" -> Max Speed: " + truck.status(1));
+        System.out.println(" -> Color: " + truck.status(3));
+        System.out.println(" -> License Plate: " + truck.status(4));
 
-        System.out.println("Accelerating, 100 of power for 4 sec.");
-        ferrari.accelerate(oneHundredConst, fourConst);
-        System.out.println(newSpeedString + ferrari.getSpeed());
+        System.out.println("\nAccelerating, 20 of power for ten sec:");
+        truck.accelerate(20, 10);
+        System.out.println("New speed: " + truck.getSpeed());
 
-        System.out.println("Breaking, 10 of power for 10 sec.");
-        ferrari.brake(tenConst, tenConst);
-        System.out.println(newSpeedString + ferrari.getSpeed());
+        System.out.println("\nBreaking, 10 of power for 10 sec.");
+        truck.brake(10, 10);
+        System.out.println("New speed: " + truck.getSpeed());
 
-        System.out.println(changingColorString);
-        ferrari.setColor("racing red!");
-        System.out.println(newColorString + ferrari.getColor());
-
-        System.out.println("");
-
-        // New Citroen Ami
-        System.out.println("Created a Citroen Ami");
-        final Vehicle citroenAmi = new Vehicle("blue", "FS-695-DQ",
-            fiveConst, fortyFiveConst);
-
-        System.out.println(statusString);
-        System.out.println(" -> Speed: " + citroenAmi.status(0));
-        System.out.println(" -> Max Speed: " + citroenAmi.status(1));
-        System.out.println(" -> Number of doors: " + citroenAmi.status(2));
-        System.out.println(" -> License Plate: " + citroenAmi.status(3));
-        System.out.println(" -> Color: " + citroenAmi.status(4));
-
-        System.out.println("Accelerating, 5 of power for 10 sec.");
-        citroenAmi.accelerate(fiveConst, tenConst);
-        System.out.println(newSpeedString + citroenAmi.getSpeed());
-
-        System.out.println("Breaking, 2 of power for 10 sec.");
-        citroenAmi.brake(2, tenConst);
-        System.out.println(newSpeedString + citroenAmi.getSpeed());
-
-        System.out.println(changingColorString);
-        citroenAmi.setColor("purple");
-        System.out.println(newColorString + citroenAmi.getColor());
+        System.out.println("\nApplied air pressure of 10");
+        truck.provideAir(10);
+        System.out.println("New speed: " + truck.getSpeed());
 
         System.out.println("\nDone.");
     }

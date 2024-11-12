@@ -15,17 +15,17 @@ public class Vehicle {
     /**
      * The color of car.
      */
-    private static String color;
+    protected static String color;
 
     /**
      * The speed of car.
      */
-    private static int speed;
+    protected static int speed;
 
     /**
      * The max speed.
      */
-    private static int maxSpeed;
+    protected static int maxSpeed;
 
     /**
      * This is the constructor.
