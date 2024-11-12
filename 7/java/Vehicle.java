@@ -15,17 +15,17 @@ public class Vehicle {
     /**
      * The color of car.
      */
-    protected static String color;
+    private static String color;
 
     /**
      * The speed of car.
      */
-    protected static int speed;
+    private static int speed;
 
     /**
      * The max speed.
      */
-    protected static int maxSpeed;
+    private static int maxSpeed;
 
     /**
      * This is the constructor.
@@ -71,7 +71,18 @@ public class Vehicle {
     }
 
     /**
-     * Getter for maxSpeed
+     * Sets the speed
+     *
+     * @param newSpeed of vehicle
+     */
+    public void setSpeed(final int newSpeed) {
+        if (newSpeed > 0 && newSpeed < maxSpeed) {
+            speed = newSpeed;
+        }
+    }
+
+    /**
+     * Getter for maxSpeed.
      *
      * @return max speed
      */

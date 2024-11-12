@@ -30,7 +30,7 @@ final class Main {
 
         // new Bike
         System.out.println("Created Bmx bike.");
-        final Bike bmxBike = new Bike("red", "40");
+        final Bike bmxBike = new Bike("red", 40);
 
         System.out.println("Status:");
         System.out.println(" -> Speed: " + bmxBike.status(0));
@@ -63,8 +63,8 @@ final class Main {
         System.out.println("Status:");
         System.out.println(" -> Speed: " + truck.status(0));
         System.out.println(" -> Max Speed: " + truck.status(1));
-        System.out.println(" -> Color: " + truck.status(3));
-        System.out.println(" -> License Plate: " + truck.status(4));
+        System.out.println(" -> Color: " + truck.status(2));
+        System.out.println(" -> License Plate: " + truck.status(3));
 
         System.out.println("\nAccelerating, 20 of power for ten sec:");
         truck.accelerate(20, 10);

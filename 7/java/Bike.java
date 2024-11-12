@@ -64,7 +64,7 @@ public class Bike extends Vehicle {
     }
 
     /**
-     * This method rings the bell
+     * This method rings the bell.
      *
      * @return bell sound
      */
