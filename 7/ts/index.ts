@@ -46,7 +46,7 @@ console.log(` -> Max Speed: ${truck.status[1]}`)
 console.log(` -> Color: ${truck.status[2]}`)
 console.log(` -> License Plate: ${truck.status[3]}`)
 
-console.log('\nAccelerating, 10 of power for ten sec:')
+console.log('\nAccelerating, 20 of power for ten sec:')
 truck.accelerate(20, 10)
 console.log(`New speed: ${truck.theSpeed}`)
 
