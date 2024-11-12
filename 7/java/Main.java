@@ -30,7 +30,7 @@ final class Main {
 
         // new Bike
         System.out.println("Created Bmx bike.");
-        final Bike bmxBike = new Bike("red", "40")
+        final Bike bmxBike = new Bike("red", "40");
 
         System.out.println("Status:");
         System.out.println(" -> Speed: " + bmxBike.status(0));
