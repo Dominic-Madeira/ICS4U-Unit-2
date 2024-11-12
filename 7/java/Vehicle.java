@@ -1,5 +1,4 @@
 /*
-    }
  * The Vehicle Class.
  *
  * @author Dominic M.
