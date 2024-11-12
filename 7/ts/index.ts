@@ -38,7 +38,7 @@ console.log(bmxBike.ring())
 
 // new Truck
 console.log('Created a Truck')
-const truck = new Truck('Grey', 'VHD-35HU', 200)
+const truck = new Truck('Grey', 'HGC-3456F', 200)
 
 console.log('Status:')
 console.log(` -> Speed: ${truck.status[0]}`)
