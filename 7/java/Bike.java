@@ -44,7 +44,9 @@ public class Bike extends Vehicle {
      */
     public Object status(final int index) {
       // creates a fixed size list of type object which is any type
-      List<Object> status = Arrays.asList(speed, maxSpeed, color, this.cadence);
+      List<Object> status = Arrays.asList(
+          getSpeed(), getMaxSpeed(), getColor(), this.cadence
+          );
       return status.get(index);
     }
 
@@ -57,9 +59,9 @@ public class Bike extends Vehicle {
     public void accelerate(final int appliedPower, final int newGear) {
         this.cadence = this.cadence + appliedPower;
         this.gear = newGear;
-        speed = speed + (this.cadence * this.gear);
-        if (speed > maxSpeed) {
-            speed = maxSpeed;
+        setSpeed(getSpeed() + (this.cadence * this.gear));
+        if (getSpeed() > getMaxSpeed()) {
+            setSpeed(getMaxSpeed());
         }
     }
 

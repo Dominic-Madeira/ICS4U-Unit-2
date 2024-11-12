@@ -68,7 +68,7 @@ public class Truck extends Vehicle {
     public Object status(final int index) {
       // creates a fixed size list of type object which is any type
       List<Object> status = Arrays.asList(
-          speed, maxSpeed, color, this.licensePlate
+          getSpeed(), getMaxSpeed(), getColor(), this.licensePlate
       );
       return status.get(index);
     }
@@ -79,9 +79,9 @@ public class Truck extends Vehicle {
      * @param airPressure how much air is being put in the tires
      */
     public void provideAir(final int airPressure) {
-        speed = speed - airPressure / 2;
-        if (speed < 0) {
-            speed = 0;
+        setSpeed(getSpeed() - airPressure / 2);
+        if (getSpeed() < 0) {
+            setSpeed(0);
         }
     }
 }
