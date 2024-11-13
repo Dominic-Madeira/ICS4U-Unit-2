@@ -1,5 +1,5 @@
 /*
- * The Vehicle Class.
+ * The Bike Class.
  *
  * @author Dominic M.
  * @since 2024-9-22
