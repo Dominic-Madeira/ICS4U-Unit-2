@@ -1,5 +1,5 @@
 /**
- * The Vehicle Class
+ * The Truck Class
  *
  * author Dominic M.
  * version 1.0
