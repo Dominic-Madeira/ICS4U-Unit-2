@@ -30,13 +30,14 @@ final class Main {
 
         // new Bike
         System.out.println("Created Bmx bike.");
-        final Bike bmxBike = new Bike("red", 40);
+        final Bike bmxBike = new Bike("Red", 40);
 
         System.out.println("Status:");
         System.out.println(" -> Speed: " + bmxBike.status(0));
         System.out.println(" -> Max Speed: " + bmxBike.status(1));
         System.out.println(" -> Color: " + bmxBike.status(2));
         System.out.println(" -> Cadence: " + bmxBike.status(3));
+        System.out.println(" -> Wheels: " + bmxBike.status(4));
 
 
         System.out.println("\nSet cadence to 10");
@@ -45,6 +46,8 @@ final class Main {
         System.out.println(" -> Max Speed: " + bmxBike.status(1));
         System.out.println(" -> Color: " + bmxBike.status(2));
         System.out.println(" -> Cadence: " + bmxBike.status(3));
+        System.out.println(" -> Wheels: " + bmxBike.status(4));
+
 
         System.out.println("\nAccelerate by 15:");
         bmxBike.accelerate(15, 2);
@@ -52,19 +55,23 @@ final class Main {
         System.out.println(" -> Max Speed: " + bmxBike.status(1));
         System.out.println(" -> Color: " + bmxBike.status(2));
         System.out.println(" -> Cadence: " + bmxBike.status(3));
+        System.out.println(" -> Wheels: " + bmxBike.status(4));
+
 
         System.out.println("\nRinging bell");
         System.out.println(bmxBike.ring());
 
         // New Truck
         System.out.println("Created a Truck");
-        final Truck truck = new Truck("Grey", "HGC-3456F", 200);
+        final Truck truck = new Truck("Grey", "HGC-3456F", 200, 18);
 
         System.out.println("Status:");
         System.out.println(" -> Speed: " + truck.status(0));
         System.out.println(" -> Max Speed: " + truck.status(1));
         System.out.println(" -> Color: " + truck.status(2));
         System.out.println(" -> License Plate: " + truck.status(3));
+        System.out.println(" -> Wheels: " + truck.status(4));
+
 
         System.out.println("\nAccelerating, 20 of power for ten sec:");
         truck.accelerate(20, 10);

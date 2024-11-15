@@ -30,6 +30,7 @@ public class Truck extends Vehicle {
      * @param colour of car
      * @param liscensePlate number
      * @param maximumSpeed of car
+     * @param wheels of car
      */
     public Truck(
         final String colour, final String liscensePlate,

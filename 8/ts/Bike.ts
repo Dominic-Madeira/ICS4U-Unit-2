@@ -9,7 +9,6 @@
 import { Vehicle } from './Vehicle.ts'
 
 export class Bike extends Vehicle {
-
   /**
    * The wheels constant for the bicycle
    */

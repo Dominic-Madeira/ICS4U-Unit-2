@@ -14,36 +14,37 @@ public class Vehicle {
     /**
      * The color of car.
      */
-    private static String color;
+    private String color;
 
     /**
      * The speed of car.
      */
-    private static int speed;
+    private int speed;
 
     /**
      * The max speed.
      */
-    private static int maxSpeed;
+    private int maxSpeed;
 
     /**
-     * The wheels of the vehicle
+     * The wheels of the vehicle.
      */
-    private static int wheels;
+    private int wheels;
 
     /**
      * This is the constructor.
      *
      * @param colour of car
      * @param maximumSpeed of car
+     * @param wheel of car
      */
     public Vehicle(
         final String colour, final int maximumSpeed, final int wheel
     ) {
-        color = colour;
-        speed = 0;
-        maxSpeed = maximumSpeed;
-        wheels = wheel;
+        this.color = colour;
+        this.speed = 0;
+        this.maxSpeed = maximumSpeed;
+        this.wheels = wheel;
     }
 
     /**
@@ -52,7 +53,7 @@ public class Vehicle {
      * @return string of car color
      */
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     /**
@@ -62,9 +63,9 @@ public class Vehicle {
      */
     public void setColor(final String newColor) {
         if (newColor != null) {
-            color = newColor;
+            this.color = newColor;
         } else {
-            color = "silver";
+            this.color = "silver";
         }
     }
 
@@ -74,7 +75,7 @@ public class Vehicle {
      * @return speed of car
      */
     public int getSpeed() {
-        return speed;
+        return this.speed;
     }
 
     /**
@@ -84,7 +85,7 @@ public class Vehicle {
      */
     public void setSpeed(final int newSpeed) {
         if (newSpeed > 0 && newSpeed < maxSpeed) {
-            speed = newSpeed;
+            this.speed = newSpeed;
         }
     }
 
@@ -94,7 +95,7 @@ public class Vehicle {
      * @return max speed
      */
     public int getMaxSpeed() {
-        return maxSpeed;
+        return this.maxSpeed;
     }
 
     /**
@@ -103,7 +104,7 @@ public class Vehicle {
      * @return amount of wheels
      */
     public int getWheels() {
-      return wheels;
+      return this.wheels;
     }
 
     /**
@@ -113,7 +114,7 @@ public class Vehicle {
      */
     public void setWheels(final int newWheels) {
       if (newWheels > 0) {
-        wheels = newWheels;
+        this.wheels = newWheels;
       }
     }
 
@@ -125,8 +126,8 @@ public class Vehicle {
      */
     public void accelerate(final int accelPower, final int accelTime) {
         speed = (accelPower * accelTime) + speed;
-        if (speed > maxSpeed) {
-            speed = maxSpeed;
+        if (this.speed > maxSpeed) {
+            this.speed = maxSpeed;
         }
     }
 
@@ -137,9 +138,9 @@ public class Vehicle {
      * @param brakeTime how long it is braking for
      */
     public void brake(final int brakePower, final int brakeTime) {
-        speed = speed - (brakePower * brakeTime);
-        if (speed < 0) {
-          speed = 0;
+        this.speed = this.speed - (brakePower * brakeTime);
+        if (this.speed < 0) {
+          this.speed = 0;
         }
     }
 }

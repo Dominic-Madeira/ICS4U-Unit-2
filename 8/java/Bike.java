@@ -15,6 +15,11 @@ import java.util.List;
 public class Bike extends Vehicle {
 
     /**
+     * The wheels constant for a bicycle.
+     */
+    private static final int BICYCLE_WHEELS = 2;
+
+    /**
      * The cadence of bike.
      */
     private int cadence;
@@ -30,10 +35,8 @@ public class Bike extends Vehicle {
      * @param colour of car
      * @param maximumSpeed of car
      */
-    public Bike(
-        final String colour, final int maximumSpeed, final int wheels
-    ) {
-        super(colour, maximumSpeed, wheels);
+    public Bike(final String colour, final int maximumSpeed) {
+        super(colour, maximumSpeed, BICYCLE_WHEELS);
         this.cadence = 0;
         this.gear = 0;
     }
