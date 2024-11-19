@@ -27,6 +27,13 @@ export abstract class Vehicle {
    */
   protected wheels: number
 
+  /**
+   * This is the constructor
+   * 
+   * @param color 
+   * @param maxSpeed 
+   * @param wheels 
+   */
   constructor (color: string, maxSpeed: number, wheels: number) {
     this.color = color
     this.speed = 0

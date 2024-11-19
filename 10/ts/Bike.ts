@@ -24,6 +24,12 @@ export class Bike extends Vehicle {
    */
   private gear: number
 
+  /**
+   * This is the constructor.
+   * 
+   * @param color 
+   * @param maxSpeed 
+   */
   constructor (color: string, maxSpeed: number) {
     super(color, maxSpeed, Bike.WHEELS_CONST)
     this.cadence = 0

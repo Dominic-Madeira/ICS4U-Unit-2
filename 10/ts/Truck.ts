@@ -19,6 +19,14 @@ export class Truck extends Vehicle {
    */
   private readonly doorsNumber: number
 
+  /**
+   * This is the constructor
+   * 
+   * @param color 
+   * @param licensePlate 
+   * @param maxSpeed 
+   * @param wheels 
+   */
   constructor (color: string, licensePlate: string, maxSpeed: number, wheels: number) {
     super(color, maxSpeed, wheels)
     this.licensePlate = licensePlate
