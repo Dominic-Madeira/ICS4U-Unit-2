@@ -9,7 +9,7 @@
 /**
  * This is the Vehicle Class.
  */
-public class Vehicle {
+public abstract class Vehicle {
 
     /**
      * The color of car.
