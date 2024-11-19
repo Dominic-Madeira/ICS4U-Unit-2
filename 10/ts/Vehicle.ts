@@ -6,7 +6,7 @@
  * since 2024-10-28
  */
 
-abstract class Vehicle {
+export abstract class Vehicle {
   /**
    * The color of car
    */
